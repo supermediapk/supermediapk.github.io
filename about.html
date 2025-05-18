@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Super Media</title>
+    <script src="assets/script.js"></script>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .hero-pattern {
+            background-color: #0f172a;
+            background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+
+        .package-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #2dd4bf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <svg class="h-8 w-8 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z">
+                            </path>
+                            <path
+                                d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z">
+                            </path>
+                        </svg>
+                        <span class="ml-2 text-xl font-bold text-gray-800">Super Media</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="index.html"
+                        class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-600">Home</a>
+                    <a href="about.html"
+                        class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-600">About</a>
+                    <a href="packages.html"
+                        class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-600">Packages</a>
+                    <a href="services.html"
+                        class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-600">Services</a>
+                    <a href="contact.html"
+                        class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-600">Contact</a>
+                </div>
+                <div class="flex items-center md:hidden">
+                    <button id="mobile-menu-button"
+                        class="p-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-100 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg absolute w-full">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100">Home</a>
+                <a href="about.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100">About</a>
+                <a href="packages.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100">Packages</a>
+                <a href="services.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100">Services</a>
+                <a href="contact.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 mt-12">
+                <h2 class="text-3xl font-bold text-gray-900">About Super Media Cable Network</h2>
+                <div class="mt-2 h-1 w-20 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-blue-200 rounded-lg transform translate-x-3 translate-y-3"></div>
+                        <div class="relative bg-blue-600 rounded-lg p-8 text-white">
+                            <h3 class="text-2xl font-semibold mb-4">Jaranwala's Most Trusted Provider</h3>
+                            <p class="mb-4">
+                                Since 2005, Super Media Cable Network has been the trusted choice for premium TV cable services across Jaranwala and nearby areas. In 2019, we expanded our commitment to connectivity by introducing high-speed internet packages — affordable, reliable, and built to keep you connected and entertained.
+                            </p>
+                            <p>
+                                Powered by Login.Me, we ensure reliable connectivity and crystal-clear cable services that keep you connected to the world.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                            <div class="text-blue-600 mb-3">
+                                <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <h4 class="text-lg font-semibold mb-2">High-Speed Internet</h4>
+                            <p class="text-gray-600">Blazing fast internet with 99.9% uptime guarantee for seamless browsing and streaming.</p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                            <div class="text-blue-600 mb-3">
+                                <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path>
+                                </svg>
+                            </div>
+                            <h4 class="text-lg font-semibold mb-2">Premium Channels</h4>
+                            <p class="text-gray-600">Get access to your favorite local channels in crystal-clear HD — entertainment like never before.</p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                            <div class="text-blue-600 mb-3">
+                                <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <h4 class="text-lg font-semibold mb-2">Customer Support</h4>
+                            <p class="text-gray-600">Our dedicated customer support team is available to assist you.</p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                            <div class="text-blue-600 mb-3">
+                                <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <h4 class="text-lg font-semibold mb-2">Reliable Service</h4>
+                            <p class="text-gray-600">Trusted by over 12,000 households in Jaranwala for consistent quality service.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   <section id="about-2" class="bg-blue-600 text-white py-16 px-4 sm:px-8 lg:px-24">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl sm:text-4xl font-bold mb-6 text-white">Our History</h2>
+    <p class="text-gray-100 text-base sm:text-lg leading-relaxed mb-6">
+      Super Media was founded in 2005 by Muhammad Aamir Munir, who served as the CEO, with a vision to provide reliable cable services to the entire city of Jaranwala. Thanks to its exceptional service and customer trust, the company quickly established a strong reputation. Over time, it expanded its reach, extending services to nearby villages and underserved areas, significantly improving the living standards of its customers. In 2019, Super Media broadened its offerings by introducing high-quality, affordable internet services, further solidifying its position as a trusted provider in the region.
+    </p>
+    <p class="text-gray-100 text-base sm:text-lg leading-relaxed mb-6">
+      From its inception, Super Media has been the leading cable service provider in the region, setting the standard for quality and reliability. Pioneering the introduction of internet services to the local community, it became the first company to bring this essential service to the area. With a customer base exceeding 10,000, Super Media has earned a reputation for excellence, consistently delivering top-tier services and maintaining a strong connection with its growing audience.
+    </p>
+    <p class="text-gray-100 text-base sm:text-lg leading-relaxed">
+      Super Media continues to set the standard for cable and internet services in the region. Our commitment to quality and customer satisfaction remains at the core of everything we do, and we look forward to further enhancing the lives of those we serve.
+    </p>
+  </div>
+</section>
+
+    <footer class="bg-white border-t mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-center md:text-left mb-4 md:mb-0">
+                    <p class="text-gray-600 text-sm">&copy; 2025 Super Media. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="privacy.html" class="text-gray-600 text-sm hover:text-blue-600">Privacy Policy</a>
+                    <a href="terms.html" class="text-gray-600 text-sm hover:text-blue-600">Terms of Service</a>
+                    <a href="contact.html" class="text-gray-600 text-sm hover:text-blue-600">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <iframe height="1" width="1"
+        style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"
+        src="assets/supermediapk.html"></iframe>
+        <script src="assets/mobile-menu.js"></script>
+</body>
+
+</html>

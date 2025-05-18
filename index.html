@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Super Media</title>
+    <script src="assets/script.js"></script>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .hero-pattern {
+            background-color: #0f172a;
+            background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+
+        .package-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #2dd4bf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <svg class="h-8 w-8 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z">
+                            </path>
+                            <path
+                                d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z">
+                            </path>
+                        </svg>
+                        <span class="ml-2 text-xl font-bold text-gray-800">Super Media</span>
+                    </div>
+                </div>
+
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="index.html"
+                        class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-600">Home</a>
+                    <a href="about.html"
+                        class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-600">About</a>
+                    <a href="packages.html"
+                        class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-600">Packages</a>
+                    <a href="services.html"
+                        class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-600">Services</a>
+                    <a href="contact.html"
+                        class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-600">Contact</a>
+                </div>
+                <div class="flex items-center md:hidden">
+                    <button id="mobile-menu-button"
+                        class="p-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-100 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg absolute w-full">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100">Home</a>
+                <a href="about.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100">About</a>
+                <a href="packages.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100">Packages</a>
+                <a href="services.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100">Services</a>
+                <a href="contact.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section id="home" class="hero-pattern pt-24 pb-16 md:pt-32 md:pb-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h1 class="text-3xl md:text-5xl font-bold text-white mb-4">
+                        Jaranwala's #1 <span class="gradient-text">Cable &amp; Internet Service</span> Provider
+                    </h1>
+                    <p class="text-gray-300 text-lg mb-8">
+                        Enjoy blazing-fast internet and premium TV cable services with Super Media Cable Network — powered by Login.Me for a seamless digital experience.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="packages.html"
+                            class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg text-center transition duration-300 ease-in-out transform hover:scale-105">
+                            View Packages
+                        </a>
+                        <a href="contact.html"
+                            class="bg-transparent border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white font-medium py-3 px-6 rounded-lg text-center transition duration-300 ease-in-out">
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <svg class="w-full max-w-md" viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="50" y="100" width="400" height="250" rx="15" fill="#1e40af"></rect>
+                        <rect x="70" y="120" width="360" height="210" rx="10" fill="#1e3a8a"></rect>
+                        <rect x="90" y="140" width="320" height="170" rx="5" fill="#000"></rect>
+                        <circle cx="250" cy="225" r="60" fill="#3b82f6" opacity="0.7"></circle>
+                        <path d="M230 205l40 20-40 20z" fill="white"></path>
+                        <rect x="150" y="330" width="200" height="20" rx="5" fill="#1e3a8a"></rect>
+                        <rect x="200" y="350" width="100" height="10" rx="5" fill="#1e40af"></rect>
+                        <path d="M50 80c0-5.523 4.477-10 10-10h30c5.523 0 10 4.477 10 10v20H50V80z" fill="#3b82f6">
+                        </path>
+                        <path d="M400 80c0-5.523 4.477-10 10-10h30c5.523 0 10 4.477 10 10v20h-50V80z" fill="#3b82f6">
+                        </path>
+                        <path d="M120 50c-5.523 0-10 4.477-10 10v20h280V60c0-5.523-4.477-10-10-10H120z" fill="#60a5fa">
+                        </path>
+                        <path d="M110 80h280" stroke="#3b82f6" stroke-width="2"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-16 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-gray-900">Our Coverage Area</h2>
+      <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+        Super Media Cable Network proudly serves Jaranwala and about 70 nearby villages.
+      </p>
+      <div class="mt-2 h-1 w-20 bg-blue-600 mx-auto"></div>
+    </div>
+
+    <div class="rounded-xl shadow-lg overflow-hidden aspect-w-16 aspect-h-9">
+      <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Ewezruk1WfAnTZCc_htHRLWVAgDeKSU&ehbc=2E312F&noprof=1" width="1220" height="480"></iframe>
+    </div>
+
+    <p class="text-center text-gray-600 mt-6">
+      Unsure if we serve your location? <a href="contact.html" class="text-blue-600 font-medium hover:underline">Contact us</a> to confirm availability.
+    </p>
+  </div>
+</section>
+
+    <footer class="bg-white border-t mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-center md:text-left mb-4 md:mb-0">
+                    <p class="text-gray-600 text-sm">&copy; 2025 Super Media. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="privacy.html" class="text-gray-600 text-sm hover:text-blue-600">Privacy Policy</a>
+                    <a href="terms.html" class="text-gray-600 text-sm hover:text-blue-600">Terms of Service</a>
+                    <a href="contact.html" class="text-gray-600 text-sm hover:text-blue-600">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"
+        src="assets/supermediapk.html"></iframe>
+    <script src="mobile-menu.js"></script>
+</body>
+
+</html>
